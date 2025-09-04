@@ -385,3 +385,174 @@ Java follows **4 main pillars of OOP**:
 * **String vs StringBuilder vs StringBuffer:** String → immutable, StringBuilder → mutable, not thread-safe, StringBuffer → mutable, thread-safe.
 
 ---
+
+**detailed, structured notes** covering all important manual testing concepts — short enough to revise, detailed enough to Technical interview.
+
+---
+
+# 🧪 Manual Testing Notes (Complete)
+
+---
+
+## 1. What is Software Testing?
+
+* Software Testing is the process of **evaluating software** to ensure it meets requirements and is free of defects.
+* Goal → deliver **quality software** with minimal bugs.
+
+---
+
+## 2. Types of Testing
+
+### 🔹 Based on Execution
+
+* **Manual Testing** → tester executes test cases without automation tools.
+* **Automation Testing** → tests are executed using tools/scripts.
+
+### 🔹 Based on Knowledge
+
+* **Black Box Testing** → focuses on input/output, tester doesn’t know internal code.
+* **White Box Testing** → focuses on code structure, logic, and paths.
+* **Grey Box Testing** → mix of both.
+
+### 🔹 Based on Level
+
+1. **Unit Testing** → testing individual components (done by developers).
+2. **Integration Testing** → checking data flow between modules.
+3. **System Testing** → testing complete system end-to-end.
+4. **Acceptance Testing** → verifying product against business requirements (UAT).
+
+### 🔹 Based on Approach
+
+* **Functional Testing** → validates features (login, signup, cart, etc.).
+* **Non-Functional Testing** → checks performance, security, usability, reliability.
+
+---
+
+## 3. Software Development Life Cycle (SDLC)
+
+* **Requirement Analysis** → gathering requirements.
+* **Design** → architecture & UI planning.
+* **Implementation** → actual coding.
+* **Testing** → verifying product.
+* **Deployment** → release to production.
+* **Maintenance** → support, bug fixing.
+
+---
+
+## 4. Software Testing Life Cycle (STLC)
+
+1. **Requirement Analysis** → understand what to test.
+2. **Test Planning** → prepare test strategy, tools, resources.
+3. **Test Case Development** → design test cases & test data.
+4. **Test Environment Setup** → prepare hardware/software for testing.
+5. **Test Execution** → run tests, log defects.
+6. **Test Closure** → prepare test reports, lessons learned.
+
+---
+
+## 5. Test Artifacts
+
+* **Test Scenario** → high-level description of what to test.
+* **Test Case** → detailed steps, input, expected result, actual result.
+* **Test Data** → input values for test execution.
+* **Defect Report (Bug Report)** → document describing issue found.
+* **Traceability Matrix** → mapping requirements to test cases.
+
+---
+
+## 6. Defect Life Cycle
+
+1. New → tester finds bug.
+2. Assigned → bug assigned to developer.
+3. Open → developer works on it.
+4. Fixed → developer resolves it.
+5. Retest → tester verifies fix.
+6. Closed → bug is resolved successfully.
+7. Reopened → bug persists.
+8. Deferred/Rejected → not valid or postponed.
+
+---
+
+## 7. Testing Techniques
+
+### 🔹 Black Box Techniques
+
+* **Equivalence Partitioning** → divide input data into valid/invalid groups.
+* **Boundary Value Analysis** → test values at boundaries (min, max, just inside/outside).
+* **Decision Table Testing** → test combinations of inputs.
+* **State Transition Testing** → test different states of application.
+
+### 🔹 White Box Techniques
+
+* **Statement Coverage** → every line of code executed at least once.
+* **Branch Coverage** → every decision (if-else) executed.
+* **Path Coverage** → every possible path executed.
+
+---
+
+## 8. Levels of Testing in Detail
+
+* **Smoke Testing** → basic build verification (is app stable?).
+* **Sanity Testing** → quick check of specific functionality.
+* **Regression Testing** → check old features after changes.
+* **Re-testing** → checking same defect again after fix.
+* **Exploratory Testing** → testing without pre-defined test cases.
+* **Ad-hoc Testing** → random testing using tester’s experience.
+
+---
+
+## 9. Non-Functional Testing
+
+* **Performance Testing** → speed, stability.
+
+  * Load Testing (expected users).
+  * Stress Testing (beyond limit).
+  * Endurance Testing (long duration).
+* **Security Testing** → authentication, authorization, data safety.
+* **Usability Testing** → user-friendly design.
+* **Compatibility Testing** → runs on all devices/browsers.
+
+---
+
+## 10. Test Metrics
+
+* **Defect Density** → defects per size of module.
+* **Test Coverage** → % of requirements tested.
+* **Defect Leakage** → bugs missed in one phase but found later.
+* **Defect Removal Efficiency (DRE)** → % of defects removed before release.
+
+---
+
+## 11. Agile Testing
+
+* Follows **Agile methodology** (Scrum/Kanban).
+* Testing is **continuous and iterative**.
+* **Daily stand-ups, sprint planning, retrospective** included.
+* QA works closely with developers from start (Shift Left Testing).
+
+---
+
+## 12. Important Interview Q\&A (Manual Testing)
+
+* **Difference between Smoke & Sanity Testing:**
+
+  * Smoke → checks stability of build.
+  * Sanity → checks specific functionality after changes.
+
+* **Difference between Verification & Validation:**
+
+  * Verification → “Are we building the product right?” (reviews, inspections).
+  * Validation → “Are we building the right product?” (actual testing).
+
+* **Severity vs Priority:**
+
+  * Severity → impact of defect on application.
+  * Priority → urgency of fixing defect.
+
+* **Bug vs Defect vs Error vs Failure:**
+
+  * Error → mistake in code.
+  * Defect/Bug → deviation found during testing.
+  * Failure → defect appears in production.
+
+---
