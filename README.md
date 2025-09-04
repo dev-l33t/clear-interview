@@ -43,6 +43,157 @@ After graduation, I enrolled in a Software Testing Course (July – Dec 2022) wh
 
 ---
 
+
+# 📝 Testing Documents & Related Terms
+
+---
+
+## 1. **Test Plan**
+
+* A **formal document** describing the **scope, objectives, strategy, resources, schedule, and deliverables** of testing.
+* It answers **what to test, how to test, who will test, and when testing will be done**.
+
+---
+
+## 2. **Test Scenario**
+
+* A **high-level description of what to test** → usually derived from requirements.
+* Example: “Verify login functionality with valid and invalid credentials.”
+
+---
+
+## 3. **Test Case**
+
+* A set of **step-by-step instructions with input, execution steps, and expected result** to validate a feature.
+* Example: Steps to enter username & password → Expected: User should log in successfully.
+
+---
+
+## 4. **Test Script**
+
+* A set of **automated test instructions** written using tools (e.g., Selenium + Java).
+* It performs **execution of test cases automatically**.
+
+---
+
+## 5. **Test Data**
+
+* The **input values (valid, invalid, boundary, large data sets)** used to test application behavior.
+* Example: Test login using valid email, invalid email, empty field, etc.
+
+---
+
+## 6. **Test Execution**
+
+* The process of **running test cases or test scripts** and recording the results.
+* Can be **manual (step execution)** or **automation (tool execution)**.
+
+---
+
+## 7. **Test Report**
+
+* A **summary document of test execution results** showing total test cases, passed, failed, blocked, skipped.
+* Helps stakeholders **understand project quality and risks**.
+
+---
+
+## 8. **Defect / Bug**
+
+* A **mismatch between expected result and actual result** found during testing.
+* Example: Clicking login with valid credentials → Actual: Error shown.
+
+---
+
+## 9. **Defect Life Cycle**
+
+* The **journey of a defect from identification to closure**.
+* States: New → Assigned → Open → Fixed → Retested → Verified → Closed (or Reopened if not fixed).
+
+---
+
+## 10. **RTM (Requirement Traceability Matrix)**
+
+* A document that **maps requirements to test cases** to ensure full coverage.
+* Helps confirm that **every requirement has been tested**.
+
+---
+
+## 11. **Smoke Testing**
+
+* A quick test to check whether the **basic functionalities of the build are working**.
+* Example: Check login, signup, and homepage load before deeper testing.
+
+---
+
+## 12. **Sanity Testing**
+
+* Narrow and deep testing to check whether **a specific bug fix or module is working properly**.
+* Example: After fixing login issue → only test login page in detail.
+
+---
+
+## 13. **Regression Testing**
+
+* Testing to ensure that **new changes do not break existing features**.
+* Example: After adding payment option → recheck login, cart, checkout.
+
+---
+
+## 14. **Re-testing**
+
+* Running the **same test again** after fixing a defect.
+* Example: Login was failing → after fix → retest login.
+
+---
+
+## 15. **Test Strategy**
+
+* A **high-level document** prepared by the QA Manager that defines **approach, tools, and testing levels**.
+* Test Plan = project-specific; Test Strategy = organization-level.
+
+---
+
+## 16. **Test Environment**
+
+* The **hardware, software, database, network setup** required for testing.
+* Example: Windows 10, Chrome browser, MySQL DB, Test server.
+
+---
+
+## 17. **Entry & Exit Criteria**
+
+* **Entry Criteria** → Conditions that must be met before testing begins (e.g., test environment ready).
+* **Exit Criteria** → Conditions that define when testing is completed (e.g., 95% test cases passed).
+
+---
+
+## 18. **Bug Severity & Priority**
+
+* **Severity** → Impact of defect on system (Critical, Major, Minor).
+* **Priority** → Order in which bug should be fixed (High, Medium, Low).
+* Example: Spelling mistake (Low severity, Low priority) vs. Login crash (High severity, High priority).
+
+---
+
+## 19. **Levels of Testing**
+
+* **Unit Testing** → Individual module testing.
+* **Integration Testing** → Module interaction testing.
+* **System Testing** → Entire application testing.
+* **UAT (User Acceptance Testing)** → Testing by end users/business.
+
+---
+
+## 20. **Types of Testing (Common in Interviews)**
+
+* **Functional Testing** → Check business functionalities.
+* **Non-Functional Testing** → Performance, security, usability.
+* **Black Box Testing** → Tester doesn’t see code, only inputs/outputs.
+* **White Box Testing** → Tester checks code structure, logic, loops.
+* **Grey Box Testing** → Partial code knowledge.
+
+---
+
 **simple, short & complete Java notes** that cover all important points for revision.
 
 ---
@@ -935,4 +1086,7 @@ Let’s now cover **TestNG** and **GitHub** in detail.
 * Use GitHub Actions for **automated test execution** after every code push.
 
 ---
+Perfect 👍 Let’s now make **Manual + Automation Testing Documentation Notes** (Test Plan, Test Cases, Test Scenario, and related terms).
+I’ll keep them **detailed, clear, and 2–3 lines each** so you can use them for **interviews + revision**.
 
+---
