@@ -742,3 +742,197 @@ public void loginTest() { ... }
   * A design pattern that separates locators and test logic → improves maintainability.
 
 ---
+
+Let’s now cover **TestNG** and **GitHub** in detail.
+
+---
+
+# 🧪 TestNG Notes
+
+---
+
+## 1. What is TestNG?
+
+* **TestNG (Test Next Generation)** is a **testing framework inspired by JUnit and NUnit**.
+* Provides advanced features like **annotations, parallel execution, grouping, prioritization, and reporting**.
+
+---
+
+## 2. Why TestNG in Selenium?
+
+* Generates **HTML test reports automatically**.
+* Supports **parallel execution** to save time.
+* Allows **test case grouping and prioritization**.
+* Handles **dependency testing** (run tests in sequence).
+* Better suited than JUnit for **large automation projects**.
+
+---
+
+## 3. TestNG Annotations (Important)
+
+* `@Test` → Marks a method as a test case.
+* `@BeforeMethod` → Runs before each test case.
+* `@AfterMethod` → Runs after each test case.
+* `@BeforeClass` → Runs once before all tests in a class.
+* `@AfterClass` → Runs once after all tests in a class.
+* `@BeforeTest` → Runs before `<test>` tag in XML.
+* `@AfterTest` → Runs after `<test>` tag in XML.
+* `@BeforeSuite` / `@AfterSuite` → Runs before/after whole test suite.
+
+---
+
+## 4. TestNG Features
+
+* **Prioritization** →
+
+  ```java
+  @Test(priority=1)
+  public void loginTest() {}
+  @Test(priority=2)
+  public void dashboardTest() {}
+  ```
+* **Grouping** →
+
+  ```java
+  @Test(groups={"Smoke"})
+  public void test1() {}
+  @Test(groups={"Regression"})
+  public void test2() {}
+  ```
+* **Dependency** →
+
+  ```java
+  @Test
+  public void startApp() {}
+
+  @Test(dependsOnMethods={"startApp"})
+  public void loginTest() {}
+  ```
+* **Parallel Execution** → defined in `testng.xml`.
+
+---
+
+## 5. testng.xml File
+
+* XML configuration file to control test execution.
+* Example:
+
+```xml
+<suite name="AutomationSuite">
+  <test name="RegressionTests" parallel="methods" thread-count="2">
+    <classes>
+      <class name="tests.LoginTest"/>
+      <class name="tests.DashboardTest"/>
+    </classes>
+  </test>
+</suite>
+```
+
+---
+
+## 6. Reporting in TestNG
+
+* Automatically generates **HTML and XML reports** after execution.
+* Can be enhanced using **Extent Reports or Allure Reports**.
+
+---
+
+## 7. Advantages of TestNG
+
+* Flexible annotations.
+* Supports parallel execution.
+* Built-in HTML reports.
+* Easy integration with **Maven/Gradle + Jenkins (CI/CD)**.
+
+---
+
+---
+
+# 🐙 GitHub Notes
+
+---
+
+## 1. What is GitHub?
+
+* **GitHub** is a cloud-based platform for **version control and collaboration** using Git.
+* It helps developers **store code, track changes, collaborate, and manage projects**.
+
+---
+
+## 2. Why GitHub for Testers & Developers?
+
+* Store and share test scripts (manual/automation).
+* Version control for Selenium projects.
+* Collaboration with team members.
+* Integrates with CI/CD tools like **Jenkins, GitHub Actions**.
+
+---
+
+## 3. Basic Git Commands (Important for Interviews)
+
+* **Setup**
+
+  ```bash
+  git config --global user.name "YourName"
+  git config --global user.email "youremail@example.com"
+  ```
+* **Initialize Repository**
+
+  ```bash
+  git init
+  ```
+* **Clone Repository**
+
+  ```bash
+  git clone <repo_url>
+  ```
+* **Check Status**
+
+  ```bash
+  git status
+  ```
+* **Stage & Commit**
+
+  ```bash
+  git add .          # Stage all files
+  git commit -m "Added new test cases"
+  ```
+* **Push Changes**
+
+  ```bash
+  git push origin main
+  ```
+* **Pull Updates**
+
+  ```bash
+  git pull origin main
+  ```
+* **Branching**
+
+  ```bash
+  git branch new-feature
+  git checkout new-feature
+  git merge new-feature
+  ```
+
+---
+
+## 4. GitHub Workflow (Simple Example)
+
+1. Clone repo from GitHub.
+2. Create a new branch for your changes.
+3. Commit your changes locally.
+4. Push branch to GitHub.
+5. Create a **Pull Request (PR)** → reviewed by team.
+6. Merge into main branch.
+
+---
+
+## 5. GitHub for Selenium Projects
+
+* Store **TestNG test scripts + Page Object Model structure**.
+* Share code with team.
+* Use GitHub Actions for **automated test execution** after every code push.
+
+---
+
