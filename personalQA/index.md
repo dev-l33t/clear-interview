@@ -34,7 +34,7 @@ After graduation, I enrolled in a Software Testing Course (July – Dec 2022) wh
 
   - Focused on **interview preparation** and **communication skills**.
   - Built a solid **portfolio** with **real-time testing projects**.
-  - Practiced [**test case writing**](https://pratiks-desk.site/test-cases/practiced-testcases/#sanity-testing), **bug reporting**, and **scenario-based testing** regularly.
+  - Practiced [**test case writing**](https://pratiks-desk.in/test-cases/practiced-testcases/#sanity-testing), **bug reporting**, and **scenario-based testing** regularly.
   - Kept learning through **online tutorials, mock interviews**, and peer feedback.
 
   I didn’t want to rush into a job. I aimed to be **fully job-ready** — both technically and personally.  
